@@ -16,6 +16,12 @@ Route::get('/', function () {
 });
 Route::get('/api/home', 'Api\PageController@home');
 Route::get('/api/post/{slug}', 'Api\PageController@one_post');
+Route::get('/api/last-articles', 'Api\PageController@last_articles');
+Route::get('/api/main-slider', 'Api\PageController@slides');
+Route::get('/api/products', 'Api\PageController@products');
+Route::post('/api/add-to-cart', 'Api\PageController@add_to_cart');
+
+
 
 
 Route::group(['prefix' => 'admin'], function () {
